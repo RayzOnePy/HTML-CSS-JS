@@ -1,0 +1,23 @@
+body {
+    font-family: 'Montserrat';
+    font-size: 15px;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+    background: url(img/bg.png);
+}
+
+h1, h2, h3, h4 {
+    margin: 0;
+}
+* {
+    box-sizing: border-box;
+}
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.intro {
+    background: url(img/bg.png);
+}
