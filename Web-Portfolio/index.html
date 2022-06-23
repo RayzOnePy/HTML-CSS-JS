@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="adaptive.css">
+    <title>Site-portfolio</title>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__wrapper">
+                <div class="header__logo">
+                    <img class="header__logotip" src="img/logo.png" alt="">
+                </div>
+                <div class="header__burger">
+                    <span></span>
+                </div>
+                <div class="menu__wrapper">
+                    <p class="menu__title">Навигация</p>
+                    <ul class="header__nav">
+                        <li><a class="header__link" href="#main">Главная</a></li>
+                        <li><a class="header__link" href="#portfolio">Портфолио</a></li>
+                        <li><a class="header__link" href="#contact">Контакты</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="main" id="main">
+        <div class="container">
+            <div class="main__wrapper">
+                <div class="main__item__photo">
+                    <img class="main__photo" src="img/me.png" alt="me">
+                </div>
+                <div class="main__item__title">
+                    <h2 class="main__title">Дмитрий Васильев</h2>
+                    <h3 class="main__subtitle">Web-Developer</h3>
+                    <p class="main__text">Изучаю такие языки как : Python, HTML, CSS, JavaScript</p>
+                    <p class="main__subtext">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis obcaecati repellat, qui dolore eligendi, minima, autem ea illo aliquid rem ex assumenda! Exercitationem laboriosam id natus recusandae mollitia? Dolore, perspiciatis!</p>
+                </div>
+            </div>
+        </div> 
+    </section>
+
+    <section class="portfolio" id="portfolio">
+        <div class="container">
+            <h2 class="portfolio__title">Сайты</h2>
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                        <a href="https://fantastic-fenglisu-c20079.netlify.app/" target="_blank">
+                            <img class="swiper__img" src="img/slider/mogo.png" alt="mogo">
+                        </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="https://polite-gumption-bb2fe2.netlify.app/" target="_blank">
+                        <img class="swiper__img" src="img/slider/business.png" alt="business">
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="https://tubular-bunny-25d0c8.netlify.app/" target="_blank">
+                        <img class="swiper__img" src="img/slider/coffee.png" alt="coffee">
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="https://magnificent-dusk-2b1d07.netlify.app/" target="_blank">
+                        <img class="swiper__img" src="img/slider/cars.png" alt="cars">
+                    </a>
+                  </div>
+                </div>
+
+                <div class="swiper-pagination"></div>
+              
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+              
+                <div class="swiper-scrollbar"></div>
+              </div>
+        </div>
+    </section>
+
+    <section class="javascript">
+        <div class="container">
+            <h2 class="portfolio__title">JavaScript Проекты</h2>
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                        <a href="JavaScript_Projects/index.html" target="_blank">
+                            <img class="swiper__img" src="img/Slider/slide1.jpg" alt="slide_1">
+                        </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="JavaScript_Projects/index.html" target="_blank">
+                        <img class="swiper__img" src="img/Slider/slide2.jpg" alt="slide_2">
+                    </a>
+                  </div>
+                  <div class="swiper-slide">
+                    <a href="JavaScript_Projects/index.html" target="_blank">
+                        <img class="swiper__img" src="img/Slider/slide3.jpg" alt="slide_3">
+                    </a>
+                  </div>
+                </div>
+
+                <div class="swiper-pagination"></div>
+              
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+              
+                <div class="swiper-scrollbar"></div>
+              </div>
+        </div>
+    </section>
+
+    <footer class="footer" id="contact">
+        <div class="container">
+            <div class="footer__wrapper">
+                <div class="footer__coopyright">
+                    <span class="coopyright">© Васильев Д. В., 2022</span>
+                </div>
+                <div class="footer__contact">
+                    <div class="contact__item">
+                        <a class="contact__telephone" href="tel:+79009232926">+7(900)923-29-26</a>
+                    </div>
+                    <div class="contact__item">
+                        <a href="https://vk.com/id260408059" target="_blank">
+                            <img class="footer__vk" src="img/vk.png" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
