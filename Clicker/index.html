@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="adaptive.css">
+    <title>Bebroy Clicker</title>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="header__wrapper">
+                <div class="logo">
+                    <a href="https://super-sundae-f4bd5d.netlify.app/">
+                        <img class="logo__img" src="img/logo.png" alt="logo">
+                    </a>
+                </div>
+                <h1 class="header__title">Бебра Кликер</h1>
+            </div>
+        </div>
+    </header>
+
+    <section class="clicker">
+        <div class="clicker__container">
+            <h2 class="clicker__money">0 Бебра-коинов</h2>
+            <div class="background__music">
+                <img id="music__icon" class="background__music-icon" src="img/button/play.png" alt="music button">
+            </div>
+            <div class="clicker__content">
+                <div class="dragon__wrapper">
+                    <div class="dragon">
+                        <div class="dragon__hitbox"></div>
+                        <div class="health">10000 / 10000</div>
+                        <progress id="health__bar" value="10000" max="10000"></progress>
+                        <div class="img__dragon"></div>
+                    </div>
+                </div>
+                <img class="img__knight" src="img/knight.png" alt="knight">
+            </div>
+            <div class="clicker__actions">
+                <div class="shop__upgrade-wrapper">
+                    <button class="shop__upgrades action__btn">Улучшения</button>
+                    <div class="menu__upgrade">
+                        <div class="upgrade">
+                            <div class="upgrade__item">
+                                <button class="upgrade__btn" id="sword__button">Улучшить</button>
+                                <p class="upgrade__label" id="sword__label">Меч (25Б)</p>
+                            </div>
+                            <div class="upgrade__item">
+                                <button class="upgrade__btn" id="helmet__button">Улучшить</button>
+                                <p class="upgrade__label" id="helmet__label">Шлем (50Б)</p>
+                            </div>
+                            <div class="upgrade__item">
+                                <button class="upgrade__btn" id="chest__button">Улучшить</button>
+                                <p class="upgrade__label" id="chest__label">Нагрудник (50Б)</p>
+                            </div>
+                            <div class="upgrade__item">
+                                <button class="upgrade__btn" id="leggins__button">Улучшить</button>
+                                <p class="upgrade__label" id="leggins__label">Поножи (50Б)</p>
+                            </div>
+                            <div class="upgrade__item">
+                                <button class="upgrade__btn" id="boots__button">Улучшить</button>
+                                <p class="upgrade__label" id="boots__label">Ботинки (50Б)</p>
+                            </div>
+                        </div>
+                        <div class="close__button close__button-shop"></div>
+                    </div>
+                </div>
+                <button class="work__button action__btn">Работать</button>
+                <div class="character__wrapper">
+                    <button class="character__button action__btn">Персонаж</button>
+                    <div class="character__menu">
+                        <div class="photo__wrapper">
+                            <div class="photo">
+                                <div class="character__photo"><img class="knight__photo" src="img/knight.png" alt=""></div>
+                            </div>
+                            <div class="character__name">Вася</div>
+                        </div>
+                        <div class="player__info">
+                            <p class="info__item" id="counter__money">Всего денег : 0</p>
+                            <p class="info__item" id="counter__click">Всего кликов : 0</p>
+                            <p class="info__item" id="counter__MPC">Денег за клик : 1</p>
+                            <p class="info__item" id="counter__strength">Сила удара : 1</p>
+                        </div>
+                        <div class="close__button close__button-character"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="congratulation">
+        <div class="container">
+            <div class="congratulation__block">
+                <h2 class="congratulation__title">Победа</h2>
+                <p class="congratulationInfo__item" id="final__money">Всего денег : 0</p>
+                <p class="congratulationInfo__item" id="final__click">Всего кликов : 0</p>
+                <p class="congratulationInfo__item" id="final__MPC">Денег за клик : 1</p>
+                <p class="congratulationInfo__item" id="final__strength">Сила удара : 1</p>
+                <div class="button__wrapper">
+                    <div class="congratulation__button" id="button__retry"><span class="desc__retry">Начать заново</span><span class="mobile__retry">Заново</span></div>
+                    <a class="congratulation__button" id="button__author" href="https://super-sundae-f4bd5d.netlify.app/" target="_blank">Автор</a>    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
